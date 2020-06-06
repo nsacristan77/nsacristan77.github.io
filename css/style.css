@@ -10,6 +10,7 @@
 }
 
 .navbar a {
+  font-size: 18px;
   color: white;
   padding: 14px 20px;
   text-decoration: none;
@@ -26,6 +27,49 @@
     flex-direction: column;
   }
 }
+
+/* start: Flex container */
+#properties {
+  max-width: 100%;
+  padding: 100px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container > div {
+  width: 400px;
+  height: 250px;
+  margin: 10px;
+  line-height: 75px;
+}
+
+.manors {
+  background: url(../images/manors1.jpg) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.amaia {
+  background: url(../images/amaia2.jpeg) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.solar {
+  background: url(../images/lasbrisas.jpg) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+.imperial {
+  background: url(../images/imperial.jpg) center center no-repeat;
+  background-size: 100% 100%;
+}
+
+/* end: Flex container */
 
 /* start: Style for the search container */
 #searchContainer {
@@ -50,13 +94,14 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
   padding: 20px;
 }
 
 .footer-about-us {
   flex: 33.33%;
   text-align: justify;
-  padding: 20px;
+  padding: 0 20px;
 }
 
 .footer-menu {
