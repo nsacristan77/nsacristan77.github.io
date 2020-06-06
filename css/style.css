@@ -21,6 +21,12 @@
   color: black;
 }
 
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+}
+
 /* start: Style for the search container */
 #searchContainer {
   width: 100%;
@@ -37,3 +43,23 @@
   text-align: center;
 }
 /* end: Style for the search container */
+
+/* start: Footer style */
+#footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-us {
+  flex: 33.33%;
+}
+
+.footer-menu {
+  flex: 33.33%;
+}
+
+.footer-icon {
+  flex: 33.33%;
+}
+/* end: Footer style */
