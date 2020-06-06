@@ -3,3 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.navbar {
+  display: flex;
+  background: dodgerblue;
+}
+
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+  text-align: center;
+}
