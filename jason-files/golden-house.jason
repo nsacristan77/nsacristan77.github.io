@@ -1,0 +1,68 @@
+[
+  {
+    "name": "Manors",
+    "model": "Louisa",
+    "type": "Single Attached",
+    "lot": "96 sqm.",
+    "floor": "62 sqm",
+    "bed": "3",
+    "shower": "2",
+    "carport": "1",
+    "photo": "https://nsacristan77.github.io/images/manors1.jpg"
+  },
+  {
+    "name": "Manors",
+    "model": "Cecilia",
+    "type": "Single Attached",
+    "lot": "96 sqm",
+    "floor": "54 sqm",
+    "bed": "3",
+    "shower": "1",
+    "carport": "1",
+    "photo": ""
+  },
+  {
+    "name": "Accropolis",
+    "model": "Sofia",
+    "type": "Single Detached",
+    "lot": "125 sqm.",
+    "floor": "110 sqm",
+    "bed": "4",
+    "shower": "2",
+    "carport": 1,
+    "photo" ""
+  },
+  {
+    "name": "Accropolis",
+    "model": "Athena",
+    "type": "Single Detached",
+    "lot": "112 sqm."
+    "floor": "90 sqm.",
+    "bed": "3",
+    "shower": "2",
+    "carport": "1",
+    "photo": ""
+  },
+  {
+    "name": "Villas Phase 3",
+    "model": "Catalina",
+    "type": "Townhouse",
+    "lot": "42 sqm.",
+    "floor": "40 sqm.",
+    "bed": "",
+    "shower": "1",
+    "carport": "",
+    "photo": ""
+  },
+  {
+    "name": "Courtyards",
+    "model": "Marquesa",
+    "type": "Townhouse",
+    "lot": "42 sqm.",
+    "floor": "40 sqm.",
+    "bed": "",
+    "shower": "1",
+    "carport": "",
+    "photo": ""
+  }
+]
