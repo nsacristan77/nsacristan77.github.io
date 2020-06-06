@@ -19,7 +19,7 @@
     "bed": "3",
     "shower": "1",
     "carport": "1",
-    "photo": ""
+    "photo": "https://nsacristan77.github.io/images/manors1.jpg"
   },
   {
     "name": "Accropolis",
@@ -30,7 +30,7 @@
     "bed": "4",
     "shower": "2",
     "carport": 1,
-    "photo" ""
+    "photo": "https://nsacristan77.github.io/images/sofia.jpeg"
   },
   {
     "name": "Accropolis",
@@ -41,7 +41,7 @@
     "bed": "3",
     "shower": "2",
     "carport": "1",
-    "photo": ""
+    "photo": "https://nsacristan77.github.io/images/athena.jpeg"
   },
   {
     "name": "Villas Phase 3",
