@@ -46,20 +46,54 @@
 
 /* start: Footer style */
 #footer {
+  background-color: gray;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  padding: 20px;
 }
 
-.about-us {
+.footer-about-us {
   flex: 33.33%;
 }
 
 .footer-menu {
   flex: 33.33%;
+  display: flex;
+  flex-direction: column;
 }
 
 .footer-icon {
-  flex: 33.33%;
+  flex:33.33%;
+  padding: 10px;
+}
+
+.image-resize {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-icon h4 {
+  margin-bottom: 8px;
+}
+.footer-icon span img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #footer {
+    display: flex;
+  }
+  .footer-about-us {
+    flex: 100%;
+  }
+  .footer-menu {
+    flex: 100%;
+  }
+  .footer-icon {
+    flex: 100%;
+  }
 }
 /* end: Footer style */
