@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+/* start: Global style */
+input:focus {
+  outline: none;
+}
+
+/* end: Global style */
+
+/* start: Navbar style */
+header {
+  background-color: dodgerblue;
+}
 .navbar {
   display: flex;
   background: dodgerblue;
