@@ -20,3 +20,20 @@
   background-color: #ddd;
   color: black;
 }
+
+/* start: Style for the search container */
+#searchContainer {
+  width: 100%;
+}
+
+.search {
+  background: url(../images/map.gif) center center no-repeat;
+  background-size: cover;
+  height: 500px;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+/* end: Style for the search container */
