@@ -88,6 +88,22 @@ header {
 }
 /* end: Navbar style */
 
+/* start: Main container style */
+#mainContainer {
+  max-width: 100%;
+  margin: 10px 0;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.house-photo {
+  max-width: 100%;
+  height: auto;
+}
+
+/* end: Main container style */
 
 /* start: Footer style */
 #footer {

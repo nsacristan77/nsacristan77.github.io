@@ -45,7 +45,7 @@ const houseData = [
     "bed": "2",
     "toilet": "1",
     "carport": "1",
-    "photo": ""
+    "photo": "https://nsacristan77.github.io/images/viaverde.jpg"
   },
   {
     "name": "West Governor Heights",
@@ -72,3 +72,15 @@ const houseData = [
     "photo": "https://nsacristan77.github.io/images/lasbrisas.jpg"
   }
 ];
+
+document.getElementById("houseTemplate").innerHTML = `
+
+${houseData.map(function(house) {
+  return `
+  <div class=house-container>
+  <img class="house-photo" src="${house.photo}">
+  </div>
+  `
+}).join('')}
+
+`
