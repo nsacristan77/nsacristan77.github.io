@@ -1,12 +1,11 @@
-* {
-  margin: 0;
-  padding: 0;
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 /* start: Global style */
 body {
-  font-size: 100%;
   font-family: sans-serif;
 }
 input:focus {
@@ -91,19 +90,14 @@ header {
 
 /* start: Style for the search container */
 #searchContainer {
-  width: 100%;
-}
-
-.search {
   background: url(../images/map.gif) center center no-repeat;
   background-size: 100% 100%;
   height: 500px;
   max-width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
-  font-size: 1em;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
 }
+
 
 @media only screen and (max-width: 480px) {
   .search {
@@ -275,7 +269,7 @@ header {
 }
 /* end: Footer2 style */
 
-/* Style fot the contact us files */
+/* Style fot the contact us page */
 #map {
   height: 500px;
   width: 100%;
@@ -287,23 +281,43 @@ header {
   }
 }
 
+/* start: Main section */
+
+/* start: Main section */
+#mainSection {
+  max-width: 100%;
+  margin: 20px 0;
+}
 .row {
   display: flex;
   flex-wrap: wrap;
 }
 
-.officeAdd {
+.sideBar {
   flex: 40%;
-  display: flex;
-  flex-direction: column;
-  background-color: dodgerblue;
-  padding: 20px;
+  padding: 0 20px;
+  color: white;
 }
 
+.offAdd {
+  background-color: dodgerblue;
+  max-width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+}
+
+.offAdd h4 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.offAdd p {
+  margin: 0 30px;
+  text-align: justify;
+}
 .contactForm {
   flex: 60%;
-  background-color: #f1f1f1;
-  padding: 20px 50px;
+  padding: 0 50px;
 }
 
 .form-container {
@@ -313,7 +327,7 @@ header {
 }
 
 .contactForm h4 {
-  padding: 0 20px;
+  padding: 0 0 20px 0;
 }
 
 input[type=text], select, textarea {
@@ -339,3 +353,6 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: #45a049;
 }
+/* end: Main section */
+
+/* Style for the contact us page */
