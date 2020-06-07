@@ -9,7 +9,7 @@ const houseData = [
     "bed": "3",
     "toilet": "2",
     "carport": "1",
-    "photo": ""
+    "photo": "https://nsacristan77.github.io/images/manors1.jpg"
   },
   {
     "name": "Accropolis",
@@ -20,8 +20,8 @@ const houseData = [
     "floor": "110 sqm",
     "bed": "4",
     "toilet": "2",
-    "carport": "1"
-    "photo": ""
+    "carport": "1",
+    "photo": "https://nsacristan77.github.io/images/sofia.jpeg"
   },
   {
     "name": "Amara Villas",
@@ -32,8 +32,8 @@ const houseData = [
     "floor": "60 sqm.",
     "bed": "2",
     "toilet": "2",
-    "carport": "",
-    "photo": ""
+    "carport": "1",
+    "photo": "https://nsacristan77.github.io/images/amara.jpg"
   },
   {
     "name": "Via Verde",
@@ -44,7 +44,7 @@ const houseData = [
     "floor": "39 sqm",
     "bed": "2",
     "toilet": "1",
-    "carport": "",
+    "carport": "1",
     "photo": ""
   },
   {
@@ -57,7 +57,7 @@ const houseData = [
     "bed": "2",
     "toilet": "1",
     "carport": "1",
-    "photo": ""
+    "photo": "https://nsacristan77.github.io/images/westgov1.jpg"
   },
   {
     "name": "Las Brisas",
@@ -69,6 +69,6 @@ const houseData = [
     "bed": "2",
     "toilet": "2",
     "carport": "1",
-    "photo": ""
+    "photo": "https://nsacristan77.github.io/images/lasbrisas.jpg"
   }
-]
+];
