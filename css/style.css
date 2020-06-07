@@ -270,3 +270,15 @@ header {
   color: white;
 }
 /* end: Footer2 style */
+
+/* Style fot the contact us files */
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 480px) {
+  #map {
+    height: 200px;
+  }
+}
