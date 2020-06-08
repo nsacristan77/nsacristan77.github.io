@@ -18,6 +18,11 @@ input:focus {
   display: table;
 }
 
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+}
+
 /* For mobile phones: */
 [class*="col-"] {
   width: 100%;
@@ -118,104 +123,31 @@ header {
   margin: 10px 0;
 }
 
+.houseTemplate {
+  width: 100%;
+}
+
+.house-container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.house-container {
+  width: 200px;
+  height: 150px;
+  float: left;
+  font-size: 0.75em;
+}
+
+.house-photo {
+  width: 150px;
+  height: 150px;
+}
+
 img {
   max-width: 100%;
   height:auto;
+  float: right;
 }
 
 /* end: Main container style */
-
-/* start: Footer style */
-#footer {
-  background-color: gray;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  font-size: 0.875em;
-  justify-content: space-between;
-  padding: 20px;
-  color: white;
-}
-
-.footer-about-us {
-  flex: 33.33%;
-  text-align: justify;
-  padding: 0 20px;
-  line-height: 20px;
-}
-
-.footer-about-us h4 {
-  margin-bottom: 5px;
-}
-
-.footer-menu {
-  flex: 33.33%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-}
-
-.footer-menu a {
-  text-decoration: none;
-  color: white;
-  line-height: 25px;
-}
-
-.footer-icon {
-  flex:33.33%;
-  padding: 10px;
-}
-
-.image-resize {
-  max-width: 100%;
-  height: auto;
-}
-
-.footer-icon h4 {
-  margin-bottom: 8px;
-}
-.footer-icon span img {
-  width: 35px;
-  height: 35px;
-  margin-right: 5px;
-}
-
-@media only screen and (max-width: 480px) {
-  #footer {
-    display: flex;
-    flex-direction: column;
-    font-size: 13px;
-  }
-  .footer-about-us {
-    flex: 100%;
-    max-width: 100%;
-    border-bottom: 1px dotted white;
-    margin-bottom: 5px;
-    padding: 5px 0px;
-  }
-  .footer-menu {
-    flex: 100%;
-    max-width: 100%;
-    border-bottom: 1px dotted white;
-  }
-  .footer-icon {
-    flex: 100%;
-  }
-  #footer2 {
-    font-size: 13px;
-  }
-}
-/* end: Footer style */
-
-/* start: Footer2 style */
-#footer2 {
-  background-color: gray;
-  border-top: 1px dotted white;
-  max-width: 100%;
-  font-size: 0.875em;
-  text-align: center;
-  padding: 10px 0;
-  color: white;
-}
-/* end: Footer2 style */
