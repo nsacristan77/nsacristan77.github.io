@@ -130,7 +130,7 @@ header {
 #houseTemplate > div {
   width: 300px;
   margin: 10px;
-  line-height: 25px;
+  line-height: 18px;
 }
 .houses {
   width: 300px;
@@ -139,17 +139,24 @@ header {
   transition: 0.3s;
   font-size: 0.75em;
 }
-.houses h2 {
-  margin-left: 5px;
-}
+
 .house-photo {
   width: 100%;
   height: 200px;
 }
 
+.text-container {
+  background-color: white;
+  padding: 4px 6px;
+}
+
 .type {
   font-size: 11px;
   margin-left: 5px;
+}
+
+.houses span {
+  margin-left: 50px;
 }
 img {
   max-width: 100%;
