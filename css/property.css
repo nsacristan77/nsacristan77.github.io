@@ -118,12 +118,10 @@ header {
 /* end: Navbar style */
 
 /* start: Main container style */
-#mainContainer {
-  max-width: 100%;
+.houses {
+  width: 300px;
+  
 }
-
-
-
 img {
   max-width: 100%;
   height:auto;
