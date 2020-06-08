@@ -120,28 +120,41 @@ header {
 /* start: Main container style */
 #mainContainer {
   max-width: 100%;
-  margin: 10px 0;
 }
 
 .houseTemplate {
-  width: 100%;
+  display: flex;
+  max-width: 100%;
+  margin: auto;
+  padding: 0 20px;
+  background-color: black;
 }
 
-.house-container::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 .house-container {
-  width: 200px;
-  height: 150px;
+  display: flex;
+  width: 450px;
+  height: 200px;
   float: left;
   font-size: 0.75em;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 6px 0 0 5px;
+  margin: 6px;
+}
+
+.house-container h2 {
+  font-size: 15px;
+  margin-top: 3px;
+}
+
+.type {
+  font-size: 8px;
+  letter-spacing: 1.5px;
 }
 
 .house-photo {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  margin: 5px;
 }
 
 img {

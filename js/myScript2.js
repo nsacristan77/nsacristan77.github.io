@@ -79,7 +79,8 @@ ${houseData.map(function(house) {
   return `
   <div class="house-container">
   <img class="house-photo" src="${house.photo}">
-  <h2 class="house-name">${house.name}(${house.type})</h2>
+  <h2 class="house-name">${house.name}</h2><br/>
+  <h2><span class="type">(${house.type})</span></h2>
   </div>
   `
 }).join('')}
