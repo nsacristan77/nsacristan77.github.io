@@ -159,7 +159,7 @@ img {
 @media only screen and (max-width: 480px) {
   #houseTemplate > div {
     width: 100%;
-    margin: 3px;
+    margin: 10px;
     line-height: 25px;
   }
   #houseTemplate {
@@ -167,6 +167,7 @@ img {
   }
   .houses {
     width: 100%;
+
   }
 }
 /* end: Main container style */
