@@ -119,32 +119,26 @@ header {
 
 /* start: Main container style */
 #houseTemplate {
+  max-width: 1140px;
+  margin: 40px auto 0 auto;
+  background-color: #FFF;
+  padding: 30px 0;
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin: auto;
-  padding: 10px 150px;
 }
 
-#houseTemplate > div {
-  width: 300px;
-  margin: 10px;
-  line-height: 18px;
-}
 .houses {
-  width: 300px;
+  width: 30%;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
-  transition: 0.3s;
-  font-size: 0.75em;
+  padding: 15px;
+  box-sizing: border-box;
+  margin-bottom: 15px;
 }
-
 .house-photo {
-  width: 100%;
-  height: 200px;
+  max-width: 100%;
+  height: 250px;
 }
-
 .text-container {
   background-color: white;
   padding: 4px 6px;
@@ -156,25 +150,17 @@ header {
 }
 
 .houses span {
-  margin-left: 50px;
+  margin-left: 10px;
 }
 img {
   max-width: 100%;
   height: auto;
 }
 
-@media only screen and (max-width: 480px) {
-  #houseTemplate > div {
-    width: 100%;
-    margin: 10px;
-    line-height: 25px;
-  }
+@media (min-width: 900px) {
   #houseTemplate {
-    padding: 0 10px;
-  }
-  .houses {
-    width: 100%;
-
+    display: flex;
+    justify-content: space-between;
   }
 }
 /* end: Main container style */
