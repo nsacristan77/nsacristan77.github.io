@@ -101,7 +101,7 @@ const houseData = [
     "bed": "2",
     "toilet": "2",
     "carport": "1",
-    "photo": "https://nsacristan77.github.io/images/brookstonepark.jpg"
+    "photo": "https://nsacristan77.github.io/images/brookstonepark(2).jpg"
   },
   {
     "name": "Brookstone Park",
