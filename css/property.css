@@ -118,13 +118,55 @@ header {
 /* end: Navbar style */
 
 /* start: Main container style */
+#houseTemplate {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: auto;
+  padding: 10px 150px;
+}
+
+#houseTemplate > div {
+  width: 300px;
+  margin: 10px;
+  line-height: 25px;
+}
 .houses {
   width: 300px;
-  
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+  transition: 0.3s;
+  font-size: 0.75em;
+}
+.houses h2 {
+  margin-left: 5px;
+}
+.house-photo {
+  width: 100%;
+  height: 200px;
+}
+
+.type {
+  font-size: 11px;
+  margin-left: 5px;
 }
 img {
   max-width: 100%;
-  height:auto;
+  height: auto;
 }
 
+@media only screen and (max-width: 480px) {
+  #houseTemplate > div {
+    width: 100%;
+    margin: 3px;
+    line-height: 25px;
+  }
+  #houseTemplate {
+    padding: 0 10px;
+  }
+  .houses {
+    width: 100%;
+  }
+}
 /* end: Main container style */

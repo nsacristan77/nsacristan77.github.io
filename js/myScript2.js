@@ -45,10 +45,10 @@ const houseData = [
     "bed": "2",
     "toilet": "1",
     "carport": "1",
-    "photo": "https://nsacristan77.github.io/images/viaverde.jpg"
+    "photo": "https://nsacristan77.github.io/images/imperial.jpg"
   },
   {
-    "name": "West Governor Heights",
+    "name": "West Gov. Heights",
     "model": "Harriet",
     "type": "Single Attached",
     "price": "2,020,000.00",
@@ -70,6 +70,18 @@ const houseData = [
     "toilet": "2",
     "carport": "1",
     "photo": "https://nsacristan77.github.io/images/lasbrisas.jpg"
+  },
+  {
+    "name": "Brookstone Park",
+    "model": "Zelia",
+    "type": "Single Attached",
+    "price": "3,483,320.00",
+    "lot": "72 sqm.",
+    "floor": "112.5 sqm.",
+    "bed": "2",
+    "toilet": "2",
+    "carport": "1",
+    "photo": "https://nsacristan77.github.io/images/lasbrisas.jpg"
   }
 ];
 
@@ -79,8 +91,7 @@ ${houseData.map(function(house) {
   return `
   <div class="houses">
   <img class="house-photo" src="${house.photo}">
-  <h2 class="house-name">${house.name}</h2><br/>
-  <h2><span class="type">(${house.type})</span></h2>
+  <h2 class="house-name">${house.name}<span class="type">(${house.type})</span></h2>
   </div>
   `
 }).join('')}
