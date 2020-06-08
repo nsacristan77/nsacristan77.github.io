@@ -77,8 +77,12 @@ document.getElementById("houseTemplate").innerHTML = `
 
 ${houseData.map(function(house) {
   return `
+  <div class="row">
+  <div class="col-3">
   <div class=house-container>
   <img class="house-photo" src="${house.photo}">
+  </div>
+  </div>
   </div>
   `
 }).join('')}

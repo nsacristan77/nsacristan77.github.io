@@ -1,6 +1,6 @@
-*,
-*::before,
-*::after {
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -190,8 +190,9 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  font-size: 0.875em;
   justify-content: space-between;
-  padding: 20px;
+  padding: 15px;
   color: white;
 }
 
@@ -271,8 +272,9 @@ header {
   background-color: gray;
   border-top: 1px dotted white;
   max-width: 100%;
+  font-size: 0.875em;
   text-align: center;
-  padding: 5px 0;
+  padding: 10px 0;
   color: white;
 }
 /* end: Footer2 style */
