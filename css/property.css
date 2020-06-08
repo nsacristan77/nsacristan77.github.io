@@ -132,12 +132,13 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 25px;
+  padding: 10px;
 }
 
 .footer-menu a {
   text-decoration: none;
   color: white;
+  line-height: 50px;
 }
 
 .footer-icon {
