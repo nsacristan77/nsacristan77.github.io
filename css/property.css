@@ -181,7 +181,12 @@ header {
   font-size: 10px;
 }
 .text1 {
+  display: flex;
   margin-top: 7px;
+}
+
+.text1 > div {
+  margin-left: 4px;
 }
 .text-container span {
   margin-left: 1px;

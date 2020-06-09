@@ -115,8 +115,14 @@ function houseApp(house) {
   <p><strong>Price starts: ${house.price}</strong></p>
   <div class="text-container">
   <div class="text1">
-  <p>Lot size<span class="sqm">(m<sup>2</sup>)</span>: ${house.lot}</p>
-  <p>Floor area<span class="sqm">(m<sup>2</sup>)</span>: ${house.floor}</p>
+  <div>
+  <p>Lot size<span class="sqm">(m<sup>2</sup>)</span>:</p>
+  <p>Floor area<span class="sqm">(m<sup>2</sup>)</span>:</p>
+  </div>
+  <div>
+  <p>${house.lot}</p>
+  <p>${house.floor}</p>
+  </div>
   </div>
   <div class="house-icon">
   <div>
@@ -136,5 +142,4 @@ function houseApp(house) {
 
 document.getElementById("houseTemplate").innerHTML = `
   ${houseData.map(houseApp).join('')}
-
 `
