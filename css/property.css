@@ -177,7 +177,7 @@ header {
 }
 
 .text1 {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .houses span {
@@ -199,6 +199,12 @@ img {
   }
   .house-icon {
     margin-left: 2;
+  }
+  .house-icon > div {
+    margin: 1px;
+  }
+  .text1 {
+    margin-top: 3px;
   }
 }
 /* end: Main container style */
