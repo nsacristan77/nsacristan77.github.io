@@ -101,32 +101,30 @@ const houseData = [
     "bed": "2",
     "toilet": "2",
     "carport": "1",
-    "photo": "https://nsacristan77.github.io/images/brookstonepark(2).jpg"
-  },
-  {
-    "name": "Brookstone Park",
-    "model": "Zelia",
-    "type": "Single Attached",
-    "status": "Pre-selling",
-    "price": "3,483,320.00",
-    "lot": "72 sqm.",
-    "floor": "112.5 sqm.",
-    "bed": "2",
-    "toilet": "2",
-    "carport": "1",
-    "photo": "https://nsacristan77.github.io/images/westgov1.jpg"
+    "photo": "https://nsacristan77.github.io/images/brookstonepark.jpg"
   }
 ];
 
 function houseApp(house) {
   return `
+  <div class="col-4">
   <div class="houses">
   <img class="house-photo" src="${house.photo}">
-  <div class="text-container">
-  <h2 class="house-name">${house.name}<span class="type">(${house.model})</span></h2>
+  <h2 class="house-name">${house.name}<span class="type">(${house.status})</span></h2>
+  <h4>Model: ${house.model}</h4>
   <p><strong>Price starts: ${house.price}</strong></p>
-  <p>Lot area: ${house.lot}<span><i class="fa fa-bed"> ${house.bed}</i></span></p>
-  <p>Floor area: ${house.floor}<span><i class="fa fa-shower"> ${house.bed}</i></span></p>
+  <div class="text-container">
+  <div class="text1">
+  <p>Lot area: ${house.lot}</p>
+  <p>Floor area: ${house.floor}</p>
+  </div>
+
+  <div class="house-icon">
+  <p><i class="fa fa-bed"></i>${house.bed}</p>
+  <p><i class="fa fa-shower"></i>${house.toilet}</p>
+  </div>
+
+  </div>
   </div>
   </div>
   `
