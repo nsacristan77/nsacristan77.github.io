@@ -1,3 +1,4 @@
+[
   {
     "name": "Manors",
     "model": "Louisa",
@@ -28,14 +29,14 @@
     "floor": "110 sqm",
     "bed": "4",
     "shower": "2",
-    "carport": 1,
+    "carport": "1",
     "photo": "https://nsacristan77.github.io/images/sofia.jpeg"
   },
   {
     "name": "Accropolis",
     "model": "Athena",
     "type": "Single Detached",
-    "lot": "112 sqm."
+    "lot": "112 sqm.",
     "floor": "90 sqm.",
     "bed": "3",
     "shower": "2",
