@@ -107,7 +107,7 @@ const houseData = [
 
 function houseApp(house) {
   return `
-  <div class="col-4">
+
   <div class="houses">
   <img class="house-photo" src="${house.photo}">
   <h2 class="house-name">${house.name}<span class="type">(${house.status})</span></h2>
@@ -118,18 +118,17 @@ function houseApp(house) {
   <p>Lot area: ${house.lot}</p>
   <p>Floor area: ${house.floor}</p>
   </div>
-
   <div class="house-icon">
   <p><i class="fa fa-bed"></i>${house.bed}</p>
   <p><i class="fa fa-shower"></i>${house.toilet}</p>
   </div>
+  </div>
+  </div>
 
-  </div>
-  </div>
-  </div>
   `
 }
 
 document.getElementById("houseTemplate").innerHTML = `
   ${houseData.map(houseApp).join('')}
+
 `

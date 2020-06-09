@@ -125,21 +125,33 @@ header {
 }
 /* end: Navbar style */
 
+#slideContainer {
+  background-color: blue;
+  width: 100%;
+  height: 100px;
+}
+
 /* start: Main container style */
+#properties {
+  max-width: 100%;
+}
 #houseTemplate {
-  background-color: #FFF;
-  margin: 20px 0;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 10px auto;
 }
 .houses {
-  width: 100%;
+  flex-basis: 30%;
   background-color: white;
   padding: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-size: 0.8125em;
+  margin: 10px 10px;
 }
 .house-photo {
   max-width: 100%;
-  height: 250px;
+  height: 210px;
 }
 
 .text-container {
@@ -167,9 +179,109 @@ img {
   height: auto;
 }
 
-@media screen and (max-width: 480px) {
-  [class*="col-"] {
+@media only screen and (max-width: 480px) {
+  #houseTemplate {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .houses {
+    flex-grow: 1;
     width: 100%;
   }
 }
 /* end: Main container style */
+
+/* start: Footer style */
+#footer {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 0.875em;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+}
+
+.footer-about-us {
+  flex: 33.33%;
+  text-align: justify;
+  padding: 10px 20px;
+  line-height: 20px;
+}
+
+.footer-about-us h4 {
+  margin-bottom: 5px;
+}
+
+.footer-menu {
+  flex: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  line-height: 25px;
+  padding: 10px 0 0 150px;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-icon {
+  flex:33.33%;
+  padding: 10px;
+}
+
+.image-resize {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-icon h4 {
+  margin-bottom: 8px;
+}
+.footer-icon span img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .footer-about-us {
+    flex: 100%;
+    max-width: 100%;
+    border-bottom: 1px dotted white;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+  }
+  .footer-menu {
+    flex: 100%;
+    max-width: 100%;
+    border-bottom: 1px dotted white;
+  }
+  .footer-icon {
+    flex: 100%;
+  }
+  #footer2 {
+    font-size: 13px;
+  }
+}
+/* end: Footer style */
+
+/* start: Footer2 style */
+#footer2 {
+  background-color: gray;
+  border-top: 1px dotted white;
+  max-width: 100%;
+  font-size: 0.875em;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+/* end: Footer2 style */
