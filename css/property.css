@@ -156,19 +156,28 @@ header {
 
 .text-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   margin-top: 8px;
 }
 .house-icon {
-  padding-right: 70px;
+  display: flex;
+  margin-left: 15px;
+}
+
+.house-icon > div {
+  margin: 5px;
 }
 .house-icon i {
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .type {
   font-size: 11px;
   margin-left: 5px;
+}
+
+.text1 {
+  margin-top: 8px;
 }
 
 .houses span {
@@ -187,6 +196,9 @@ img {
   .houses {
     flex-grow: 1;
     width: 100%;
+  }
+  .house-icon {
+    margin-left: 2;
   }
 }
 /* end: Main container style */

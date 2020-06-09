@@ -119,8 +119,14 @@ function houseApp(house) {
   <p>Floor area: ${house.floor}</p>
   </div>
   <div class="house-icon">
-  <p><i class="fa fa-bed"></i>${house.bed}</p>
-  <p><i class="fa fa-shower"></i>${house.toilet}</p>
+  <div>
+  <p><i class="fa fa-bed"></i>Bedrooms:</p>
+  <p><i class="fa fa-shower"></i>Toilet & Bath:</p>
+  </div>
+  <div>
+  <p>${house.bed}</p>
+  <p>${house.toilet}</p>
+  </div>
   </div>
   </div>
   </div>
