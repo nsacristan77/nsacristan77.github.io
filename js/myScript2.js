@@ -91,17 +91,17 @@ const houseData = [
     "photo": "https://nsacristan77.github.io/images/brookstonepark.jpg"
   },
   {
-    "name": "Brookstone Park",
-    "model": "Zelia",
+    "name": "West Beverly Hills",
+    "model": "Nathalie",
     "type": "Single Attached",
-    "status": "Pre-selling",
-    "price": "3,483,320.00",
-    "lot": "72",
-    "floor": "112.5",
-    "bed": "2",
+    "status": "New",
+    "price": "5,015,344.63",
+    "lot": "140",
+    "floor": "123.80",
+    "bed": "3",
     "toilet": "2",
     "carport": "1",
-    "photo": "https://nsacristan77.github.io/images/brookstonepark.jpg"
+    "photo": "https://nsacristan77.github.io/images/nathalie.jpg"
   }
 ];
 
