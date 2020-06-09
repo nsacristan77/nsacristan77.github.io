@@ -115,8 +115,8 @@ function houseApp(house) {
   <p><strong>Price starts: ${house.price}</strong></p>
   <div class="text-container">
   <div class="text1">
-  <p>Lot area: ${house.lot}</p>
-  <p>Floor area: ${house.floor}</p>
+  <p>Lot size<span class="sqm">(m<sup>2</sup>)</span>: ${house.lot}</p>
+  <p>Floor area<span class="sqm">(m<sup>2</sup>)</span>: ${house.floor}</p>
   </div>
   <div class="house-icon">
   <div>
