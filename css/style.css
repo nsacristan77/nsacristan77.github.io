@@ -360,6 +360,7 @@ header {
 
 .email {
   display: flex;
+  width: 100%;
 }
 
 /* end: Cavite office address style */
