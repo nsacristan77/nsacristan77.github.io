@@ -352,6 +352,8 @@ header {
 .cavite-icon {
   display: flex;
   margin-bottom: 10px;
+  width: 100%;
+  text-align: justify;
 }
 .cavite-contact-icon {
   display: flex;
