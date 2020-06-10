@@ -355,6 +355,11 @@ header {
 }
 .cavite-contact-icon {
   display: flex;
+  margin-bottom: 8px;
+}
+
+.email {
+  display: flex;
 }
 
 /* end: Cavite office address style */
