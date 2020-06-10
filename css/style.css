@@ -311,20 +311,64 @@ header {
 }
 
 .offAdd {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: dodgerblue;
   max-width: 100%;
   height: 100%;
-  padding: 20px 10px;
+  padding: 20px 20px;
 }
 
 .offAdd h4 {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: left;
+}
+.offAdd h5 {
+  font-size: 1.063em;
 }
 
 .offAdd p {
-  margin: 0 30px;
-  text-align: justify;
+  font-size: 0.875em;
+  line-height: 18px;
+}
+
+/* start: Cavite office address style */
+.cavite {
+  height: 100%;
+}
+
+.cavite .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+.cavite h4 {
+  margin-bottom: 10px;
+  font-size: 1.125em;
+}
+
+.cavite h6 {
+  font-size: 1.063em;
+}
+.cavite-icon {
+  display: flex;
+  margin-bottom: 10px;
+}
+.cavite-contact-icon {
+  display: flex;
+}
+
+/* end: Cavite office address style */
+
+.bulacan {
+  height: 100%;
+  color: white;
+}
+
+.bulacan-icon {
+  display: flex;
+}
+.bulacan p {
+  margin: 0 10px;
 }
 .contactForm {
   flex: 60%;
