@@ -137,8 +137,15 @@ header {
   #searchContainer {
     height: 235px;
   }
-  .search {
-    height: 200px;
+  .searchBar {
+    width: 80%;
+    padding: 5px;
+  }
+  .searchBar input {
+    height: 25px;
+  }
+  .searchBar button {
+    height: 25px;
   }
 }
 /* end: Style for the search container */
