@@ -12,6 +12,11 @@ input:focus {
   outline: none;
 }
 
+button {
+  outline: none;
+  border: none;
+}
+
 /* end: Global style */
 
 /* start: Navbar style */
@@ -96,8 +101,37 @@ header {
   max-width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.searchBar {
+  width: 30%;
+  padding: 8px;
+  display: flex;
+  background-color: dodgerblue;
+}
+.searchBar button {
+  background-color: tomato;
+  height: 35px;
+  width: 20%;
+  cursor: pointer;
+  color: white;
+}
+
+.searchBar button:hover {
+  background-color: yellow;
+  color: black;
+}
+.searchBar input {
+  width: 80%;
+  height: 35px;
+  padding: 10px;
+  border: none;
+  color: black;
+}
 
 @media only screen and (max-width: 480px) {
   #searchContainer {
@@ -339,7 +373,7 @@ header {
 
 .cavite .icon {
   font-size: 20px;
-  margin-right: 10px;
+  margin-right: 10px
 }
 .cavite h4 {
   margin-bottom: 10px;
@@ -367,17 +401,36 @@ header {
 
 /* end: Cavite office address style */
 
+/* start: Bulacan office address style */
 .bulacan {
   height: 100%;
   color: white;
 }
 
+.bulacan h4 {
+    margin-bottom: 10px;
+    font-size: 1.125em;
+}
+
+.bulacan h6 {
+  font-size: 1.063em;
+}
+
+.bulacan .icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
 .bulacan-icon {
   display: flex;
+  width: 100%;
+  text-align: justify;
 }
-.bulacan p {
-  margin: 0 10px;
+
+.contactIcon {
+  display: flex;
 }
+
+/* end: Bulacan style */
 .contactForm {
   flex: 60%;
   padding: 0 50px;
@@ -393,7 +446,7 @@ header {
   padding: 0 0 20px 0;
 }
 
-input[type=text], select, textarea {
+.contactForm input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -404,7 +457,7 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
-input[type=submit] {
+.contactForm input[type=submit] {
   background-color: #4CAF50;
   color: white;
   padding: 12px 30px;
@@ -413,7 +466,7 @@ input[type=submit] {
   cursor: pointer;
 }
 
-input[type=submit]:hover {
+.contactForm input[type=submit]:hover {
   background-color: #45a049;
 }
 /* end: Main section */
