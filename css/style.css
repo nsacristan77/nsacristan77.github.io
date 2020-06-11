@@ -195,6 +195,11 @@ header {
   position: relative;
 }
 
+.btn1 a {
+  text-decoration: none;
+  color: white;
+}
+
 .btn1 {
   width: 45%;
   position: absolute;
@@ -211,6 +216,11 @@ header {
   border-radius: 5px;
 }
 
+.btn1:hover {
+  background-color: tomato;
+  color: black;
+}
+
 @media only screen and (max-width: 480px) {
   #properties {
     max-width: 100%;
@@ -222,6 +232,7 @@ header {
   }
   .btn1 {
     font-size: 14px;
+    width: 50%;
   }
 }
 /* end: Flex container */
@@ -333,8 +344,6 @@ header {
     height: 200px;
   }
 }
-
-/* start: Main section */
 
 /* start: Main section */
 #mainSection {
