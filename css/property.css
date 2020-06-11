@@ -12,7 +12,7 @@ input:focus {
   outline: none;
 }
 
-button {
+button, span, a {
   outline: none;
   border: none;
 }
