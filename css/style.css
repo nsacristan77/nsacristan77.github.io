@@ -373,6 +373,8 @@ header {
 
 .offAdd h4 {
   text-align: left;
+  color: gold;
+  text-shadow: 2px 2px 5px black;
 }
 .offAdd h5 {
   font-size: 1.063em;
@@ -499,6 +501,9 @@ header {
   }
   .contactForm h4 {
     padding: 0 0 2px 0;
+  }
+  .bulacan {
+    margin-top: 50px;
   }
 
 }
