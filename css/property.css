@@ -269,7 +269,10 @@ img {
     flex-flow: row wrap;
   }
   .houses {
-    flex-grow: 1;
+    flex-basis: 100%;
+    width: 100%;
+  }
+  .house-photo {
     width: 100%;
   }
   .house-icon {
