@@ -21,7 +21,10 @@ button, span, a {
 
 /* start: Navbar style */
 header {
+  width: 100%;
+  display: inline-block;
   background-color: dodgerblue;
+  position: relative;
 }
 .navbar {
   display: flex;
@@ -37,6 +40,12 @@ header {
   text-align: center;
 }
 
+.brand-logo {
+  position: absolute;
+  background-color: blue;
+  width: 100px;
+}
+
 .navbar a:hover {
   background-color: white;
   color: black;
@@ -46,7 +55,10 @@ header {
   display: none;
   cursor: pointer;
 }
-
+.companyLogo .image-resize {
+  width: 100%;
+  height: 60px;
+}
 .bar1, .bar2, .bar3 {
   width: 35px;
   height: 5px;
@@ -126,6 +138,21 @@ header {
   }
   .navbar a {
     border-bottom: 1px solid white;
+    display: block;
+  }
+  .header {
+    display: flex;
+  }
+  .dropdown {
+    width: 100%;
+    display: inline-block;
+  }
+  .dropdown-content {
+    width: 100%;
+  }
+  .dropdown-content a {
+    width: 100%;
+    text-align: center;
     display: block;
   }
   .menuIcon {
