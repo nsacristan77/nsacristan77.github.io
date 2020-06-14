@@ -15,38 +15,36 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
   </head>
   <body>
-    <header>
+
+    <nav class="clearfix">
+      <div class="brand-logo">
+        <a href="#"><img class="image-brand" src="images/logo.png" alt=""></a>
+      </div>
+      <div class="brand-name">
+        <a href="#"><p>Marajc Realty</p></a>
+      </div>
       <div class="menuIcon" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-      <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="about_us.html">About Us</a>
-        <a href="property.html">Properties</a>
-        <a href="contactus.html">Contact Us</a>
+      <div class="navbar" class="clearfix">
+        <ul class="clearfix">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Learn More</a>
+              <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Be part of our team</a></li>
+              </ul>
+          </li>
+          <li><a href="property.html">Properties</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
       </div>
-    </header>
+    </nav>
 
-    <div class="slider">
-      <div class="photo">
-        <img class="image-resize" src="images/acropolis.jpg" alt="">
-      </div>
-      <div class="photo">
-        <img class="image-resize" src="images/manors1.jpg" alt="">
-      </div>
-      <div class="photo">
-        <img class="image-resize" src="images/amara.jpg" alt="">
-      </div>
-      <div class="photo">
-        <img class="image-resize" src="images/amara.jpg" alt="">
-      </div>
-      <div class="photo">
-        <img class="image-resize" src="images/amara.jpg" alt="">
-      </div>
-    </div>
-
+    
     <section id="about">
       <h4>ABOUT US</h4>
     </section>
@@ -64,7 +62,7 @@
         <div class="row">
           <div class="column">
             <div class="team">
-                <img  src="images/maricelgaveña.jpg" alt="">
+                <img class="agent-photo" src="images/maricelgaveña.jpg" alt="">
               <div class="textContainer">
                 <h4>Maricel Gaveña</h4>
                 <h5>Sales Manager</h5>
@@ -77,7 +75,7 @@
           </div>
           <div class="column">
             <div class="team">
-              <img  src="images/vanessa.jpg" alt="">
+                <img class="agent-photo" src="images/vanessa.jpg" alt="">
               <div class="textContainer">
                 <h4>Vanessa Verezo</h4>
                 <h5>Sales Manager</h5>
@@ -90,7 +88,7 @@
           </div>
           <div class="column">
             <div class="team">
-              <img  src="images/rizzyferry.jpg" alt="">
+              <img class="agent-photo" src="images/rizzyferry.jpg" alt="">
               <div class="textContainer">
                 <h4>Maricel Gaveña</h4>
                 <h5>Sales Manager</h5>
@@ -103,7 +101,7 @@
           </div>
           <div class="column">
             <div class="team">
-              <img  src="images/sallysorio.jpg" alt="">
+              <img class="agent-photo" src="images/sallysorio.jpg" alt="">
               <div class="textContainer">
                 <h4>Sally Sorio</h4>
                 <h5>Sales Manager</h5>

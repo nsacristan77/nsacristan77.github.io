@@ -11,33 +11,36 @@
     <script src="https://use.fontawesome.com/c30b9243b2.js"></script>
   </head>
   <body>
-    <header>
+
+    <nav class="clearfix">
+      <div class="brand-logo">
+        <a href="#"><img class="image-brand" src="images/logo.png" alt=""></a>
+      </div>
+      <div class="brand-name">
+        <a href="#"><p>Marajc Realty</p></a>
+      </div>
       <div class="menuIcon" onclick="myFunction(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
       </div>
-
-      <div class="brand-logo">
-
+      <div class="navbar" class="clearfix">
+        <ul class="clearfix">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Learn More</a>
+              <ul>
+                <li><a href="about_us.html">About Us</a></li>
+                <li><a href="">Events</a></li>
+                <li><a href="">Be part of our team</a></li>
+              </ul>
+          </li>
+          <li><a href="property.html">Properties</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
       </div>
+    </nav>
 
-      <div class="navbar">
-        <a href="index.html">Home</a>
-        <div class="dropdown">
-          <a href="about_us.html" class="dropbtn">About Us</a>
-            <div class="dropdown-content">
-              <a href="index.html">Gallery</a>
-              <a href="#">Events</a>
-              <a href="#">Be Part of The Team</a>
-            </div>
-        </div>
-        <a href="property.html">Properties</a>
-        <a href="contactus.html">Contact Us</a>
-      </div>
-    </header>
-
-    <section id="searchContainer">
+    <section id="searchContainer" class="clearfix">
       <div class="searchBar">
         <input type="text" name="" placeholder="Enter City/Province..." />
         <button><i class="fa fa-search"></i></button>
@@ -45,19 +48,41 @@
     </section>
 
     <section id="properties">
-      <div class="flex-container">
-        <div class="manors">
-          <a href="golden_horizon.html"><button class="btn1">Golden Horizon</button></a>
+      <h4>PROPERTIES</h4>
+      <div class="container">
+      <div class="row">
+        <div class="column">
+          <div class="golden">
+            <button class="btn1" name="button">Golden Horizon</button>
+          </div>
         </div>
-        <div class="amaia">
-          <a href="amaia.html"><button class="btn1">Amaia Escapes</button></a>
+        <div class="column">
+          <div class="solar">
+            <button class="btn1" name="button">West Berverly Hills</button>
+          </div>
         </div>
-        <div class="solar">
-          <a href="solar_resources.html"><button class="btn1">Las Brisas</button></a>
+        <div class="column">
+          <div class="imperial">
+            <button class="btn1" name="button">Via Verde</button>
+          </div>
         </div>
-        <div class="imperial">
-          <a href="imperial.html"><button class="btn1">Via Verde</button></a>
+        <div class="column">
+          <div class="amaia">
+            <button class="btn1" name="button">Amaia Escapes Gentri</button>
+          </div>
         </div>
+        <div class="column">
+          <div class="amara">
+            <button class="btn1" name="button">Amara Villas</button>
+          </div>
+        </div>
+        <div class="column">
+          <div class="manors">
+            <button class="btn1" name="button">Manors</button>
+          </div>
+        </div>
+      </div>
+      <a href="property.html"><button class="viewAll">View All Properties</button></a>
       </div>
     </section>
 
