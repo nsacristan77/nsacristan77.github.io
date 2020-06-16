@@ -1,0 +1,124 @@
+nav {
+  width: 100%;
+  height: 68px;
+  background-color: dodgerblue;
+}
+.brand-logo {
+  width: 68px;
+  height: 65px;
+  float: left;
+  margin-left: 10px;
+}
+
+.brand-name {
+  width: 200px;
+  float: left;
+  font-family: sans-serif;
+  color: white;
+  font-size: 24px;
+  line-height: 62px;
+  padding: 0px 20px;
+}
+.brand-name a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul {
+  float: right;
+  padding: 0 20px;
+}
+
+.navbar ul li {
+  float: left;
+  list-style: none;
+  position: relative;
+}
+.navbar ul li a {
+  display: block;
+  font-family: sans-serif;
+  color: white;
+  font-size: 18px;
+  padding: 23px 14px;
+  text-decoration: none;
+}
+
+.navbar ul li ul {
+  display: none;
+  position: absolute;
+  background-color: dodgerblue;
+  z-index: 1;
+  padding: 10px;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.navbar ul li:hover ul {
+  display: block;
+
+}
+.navbar ul li ul li {
+  width: 180px;
+  border-radius: 4px;
+}
+
+.navbar ul li ul li a {
+  padding: 8px 14px;
+}
+
+.navbar ul li ul li a:hover {
+  background-color: white;
+}
+
+.navbar ul li a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* start: Menu icon */
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 6px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-50deg) translate(-8px, 5px);
+  transform: rotate(-50deg) translate(-8px, 5px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(50deg) translate(-5px, -5px);
+  transform: rotate(50deg) translate(-5px, -5px);
+}
+/* end: Menu icon */
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+    flex-direction: column;
+  }
+  .navbar a {
+    display: flex;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  .menuIcon {
+    display: block;
+    margin-left: 35px;
+  }
+}
