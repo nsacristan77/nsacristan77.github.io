@@ -29,7 +29,11 @@ button, span, a {
     margin: auto;
     padding: 0 10px;
 }
-
+.flex {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
 .row {margin: 0 5px;}
 
 img {
