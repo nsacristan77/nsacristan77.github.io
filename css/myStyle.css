@@ -254,6 +254,25 @@ header {
     width: 100%;
     display: block;
   }
+  .about-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    height: 40px;
+    font-size: 15px;
+    color: gold;
+    text-shadow: 2px 2px 5px black;
+  }
+  .about-text {
+    font-size: 13px;
+  }
+  .about-mission {
+    font-size: 13px;
+  }
+  .about-vission {
+    font-size: 13px;
+  }
 }
 /* end: Meet team section */
 
