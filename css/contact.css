@@ -173,10 +173,11 @@ li .dropdown {
     width: 100%;
   }
   .navbar li {
-    display: block;
     float: none;
   }
-
+  li a {
+    display: block;
+  }
   .navbar li a:hover {
     background-color: white;
   }

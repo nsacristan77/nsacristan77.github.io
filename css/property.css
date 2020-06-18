@@ -56,19 +56,19 @@ img {
 
 /* start: Navbar style */
 nav {
+  display: flex;
+  flex-direction: row;
   width: 100%;
   background-color: dodgerblue;
 }
 .brand-logo {
   width: 68px;
   height: 65px;
-  float: left;
   margin-left: 10px;
 }
 
 .brand-name {
   width: 200px;
-  float: left;
   font-family: sans-serif;
   color: white;
   font-size: 24px;
@@ -81,7 +81,7 @@ nav {
 }
 
 .navbar {
-  float: right;
+  padding: 0 0 0 300px;
 }
 ul {
   list-style-type: none;
@@ -168,18 +168,17 @@ li .dropdown {
 
 @media only screen and (max-width: 600px) {
   .navbar {
-    display: none;
-    float: none;
     width: 100%;
+    display: none;
+    background-color: red;
   }
   .navbar li {
+    float: left;
+  }
+  li a {
     display: block;
-    float: none;
   }
 
-  .navbar li a:hover {
-    background-color: white;
-  }
   .menuIcon {
     display: block;
     margin: 15px;

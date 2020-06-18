@@ -5,7 +5,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Marajc Realty</title>
-      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/mainStyle.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
       <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -17,38 +17,27 @@
     </head>
   <body>
 
-    <nav class="clearfix">
-      <div class="brand-logo">
-        <a href="#"><img class="image-brand" src="images/logo.png" alt=""></a>
-      </div>
-      <div class="brand-name">
-        <a href="#"><p>Marajc Realty</p></a>
-      </div>
-      <div class="menuIcon" onclick="myFunction(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <div class="navbar">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown"></a>
-            <a href="javascript:void(0)" class="dropbtn">Learn More</a>
-            <div class="dropdown-content">
-              <a href="about_us.html">About Us</a>
-              <a href="#">Events</a>
-              <a href="#">Be part of our team</a>
-            </div>
-          </li>
-          <li><a href="property.html">Properties</a></li>
-          <li><a href="contactus.html">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
+    <header class="clearfix">
+      <img class="brand-logo" src="images/logo.png" alt="">
+      <p class="brand-name">Marajc Realty</p>
+      <nav>
+          <div class="menuIcon" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about_us.html">About Us</a>
+            <a href="property.html">Properties</a>
+            <a href="contactus.html">Contact Us</a>
+          </div>
+        </nav>
+    </header>
 
-    <section id="searchContainer" class="clearfix">
+    <section id="searchContainer">
       <div class="searchBar">
-        <input type="text" name="" placeholder="Enter City/Province..." />
+        <input type="text" name="" placeholder="Enter City/Province...">
         <button><i class="fa fa-search"></i></button>
       </div>
     </section>
@@ -64,12 +53,12 @@
         </div>
         <div class="column">
           <div class="solar">
-            <button class="btn1" name="button">West Berverly Hills</button>
+            <a href=""><button class="btn1" name="button">West Berverly Hills</button></a>
           </div>
         </div>
         <div class="column">
           <div class="imperial">
-            <button class="btn1" name="button">Via Verde</button>
+            <a href=""><button class="btn1" name="button">Via Verde</button></a>
           </div>
         </div>
         <div class="column">
@@ -79,12 +68,12 @@
         </div>
         <div class="column">
           <div class="amara">
-            <button class="btn1" name="button">Amara Villas</button>
+            <a href=""><button class="btn1" name="button">Amara Villas</button></a>
           </div>
         </div>
         <div class="column">
           <div class="manors">
-            <button class="btn1" name="button">Manors</button>
+            <a href=""><button class="btn1" name="button">Manors</button></a>
           </div>
         </div>
       </div>
