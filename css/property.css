@@ -199,12 +199,14 @@ header {
 /* start: Property style */
 #propertyList {
   width: 100%;
+  background-color: whitesmoke;
 }
 .property {
   display: flex;
   flex-direction: column;
 }
 .propertyBox {
+  background-color: white;
   flex-grow: 1;
   display: flex;
   flex-direction: row;
