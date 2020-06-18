@@ -35,7 +35,7 @@ button, span, a {
 img {
   max-width: 100%;
   height: auto;
-  margin: 0 0 10px 0;
+  margin: 0;
 }
 .clearfix:after {
   content: ".";
@@ -139,8 +139,6 @@ header {
 }
 /* end: Navigation bar style */
 
-
-
 /* start: Style for the search container */
 #searchContainer {
   background: url(../images/map.gif) center center no-repeat;
@@ -198,6 +196,32 @@ header {
 }
 /* end: Style for the search container */
 
+/* start: Property style */
+#propertyList {
+  width: 100%;
+}
+.property {
+  display: flex;
+  flex-direction: column;
+}
+.propertyBox {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  margin: 15px;
+  box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
+}
+
+.infoBox {
+  padding: 10px 20px;
+}
+
+.photo-resize {
+  width: 400px;
+  height: 300px;
+}
+/* end: Property style */
 
 /* start: Footer style */
 #footer {
