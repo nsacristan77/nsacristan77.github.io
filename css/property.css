@@ -67,8 +67,8 @@ header {
 }
 .navbar a {
   text-decoration: none;
-  font-size: 18px;
-  padding: 23px 16px;
+  font-size: 16px;
+  padding: 24px 16px;
   color: white;
 }
 
@@ -80,7 +80,7 @@ header {
   margin-left: 10px;
   float: left;
   width: 65px;
-  height: 55px;
+  height: 65px;
 }
 .brand-name {
   float: left;
@@ -202,26 +202,57 @@ header {
   background-color: whitesmoke;
 }
 .property {
+  flex-grow: 1;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
 }
 .propertyBox {
   background-color: white;
   flex-grow: 1;
   display: flex;
   flex-direction: row;
-  padding: 8px;
   margin: 15px;
   box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
 }
-
+a {
+  text-decoration: none;
+  color: black;
+}
 .infoBox {
-  padding: 0 15px;
+  flex-grow: 1;
+  padding: 8px 25px 8px 10px;
+  font-size: 14px;
+}
+.map-address {
+  display: flex;
+  margin-right: 5px;
+}
+.map-address .icon {
+  margin-right: 5px;
+}
+.photo-resize {
+  width: 280px;
+  height: 185px;
 }
 
-.photo-resize {
-  width: 400px;
-  height: 300px;
+@media screen and (max-width: 600px) {
+  .property {
+    display: flex;
+    flex-direction: column;
+  }
+  .propertyBox {
+    flex-grow: 1;
+    margin: 4px;
+  }
+  .photo-resize {
+    width: 150px;
+    height: 120px;
+  }
+  .infoBox {
+    flex-grow: 1;
+    padding: 8px 5px 8px 10px;
+    font-size: 12px;
+  }
 }
 /* end: Property style */
 
