@@ -126,7 +126,10 @@ header {
     text-align: center;
   }
   .navbar a {
-    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .navbar a:last-child {
+    border-bottom: none;
   }
   .menuIcon {
     display: flex;
