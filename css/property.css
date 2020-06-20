@@ -235,7 +235,7 @@ a {
 }
 .photo-resize {
   width: 280px;
-  height: 185px;
+  height: 250px;
 }
 
 @media screen and (max-width: 600px) {
@@ -249,12 +249,12 @@ a {
   }
   .photo-resize {
     width: 150px;
-    height: 120px;
+    height: 125px;
   }
   .infoBox {
     flex-grow: 1;
-    padding: 8px 5px 8px 10px;
-    font-size: 12px;
+    padding: 8px 5px 5px 10px;
+    font-size: 11px;
   }
 }
 /* end: Property style */
