@@ -93,7 +93,6 @@ nav {
 
 .navbar ul li:hover ul {
   display: block;
-
 }
 .navbar ul li ul li {
   width: 180px;
