@@ -83,18 +83,36 @@ img {
   flex: 50%;
   padding: 15px;
 }
-.acropolis-photo-gallery {
-  display: grid;
-  grid-template-columns: repeat(5, 100px);
-  justify-content: center;
-  align-content: center;
-  grid-gap: 10px;
-}
+
 .acropolis-photo-gallery img {
   width: 100px;
   height: 100px;
   cursor: pointer;
 }
 
+/* start: Thumbnail style */
+.thumbnails a {
+  float: left;
+  width: 20%;
+  padding-right: 15px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+.thumbnails img {
+  display: block;
+  transition: all .2s ease-in-out;
+}
+
+.thumbnails:hover img {
+  opacity: .6;
+  transform: scale(.92);
+}
+
+.thumbnails img:hover {
+  opacity: 1;
+  transform: scale(1) rotate(2deg);
+  box-shadow: 0 0 7px rgba(0, 0, 0, .5);
+}
+/* end: Thumbnail style */
 
 /* end: Acropolis style */
