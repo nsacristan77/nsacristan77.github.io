@@ -93,13 +93,64 @@
           </div>
         </div>
 
+
+        <!-- Rigth column -->
         <div class="right-column">
-          <div class="">
+          <div class="tab">
+            <button class="tablinks" onclick="openDetails(event, 'Overview')">Overview</button>
+            <button class="tablinks" onclick="openDetails(event, 'Amenities')">Amenities</button>
+            <button class="tablinks" onclick="openDetails(event, 'Location')">Location</button>
+          </div>
+
+          <div id="Overview" class="tabcontent">
+            <h3>Details</h3>
+            <div class="tabcontent-container">
+              <div class="tabcontentLeft">
+                <div class="tabcontent-info">
+                  <div>
+                    <p>Garage</p>
+                    <p>Lotr area(m<sup>2</sup>):</p>
+                    <p>Floor area(m<sup>2</sup>):</p>
+                  </div>
+                  <div>
+                    <p>1</p>
+                    <p>125</p>
+                    <p>110</p>
+                  </div>
+                </div>
+
+                <div class="tabcontent-icon">
+                  <div >
+                    <p><i class="fa fa-bed" aria-hidden="true"></i> Bedrooms:</p>
+                    <p><i class="fa fa-shower" aria-hidden="true"></i> Toilet & Bath:</p>
+                  </div>
+                  <div>
+                    <p>4</p>
+                    <p>2</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabcontentRight">
+                <div>
+                  <p>Developer</p>
+                  <p>Subdivision</p>
+                  <p>Price starts</p>
+                </div>
+
+                <div>
+                  <p>HGII</p>
+                  <p>Golden Horizon</p>
+                  <p>1,200,000.00</p>
+                </div>
+              </div>
+
+            </div>
 
           </div>
+
         </div>
       </div>
-
     </div>
 
     <section id="footer">

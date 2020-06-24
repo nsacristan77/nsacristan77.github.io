@@ -7,6 +7,7 @@
 /* start: Global style */
 body {
   font-family: sans-serif;
+  background-color: lightgrey;
 }
 input:focus {
   outline: none;
@@ -62,6 +63,8 @@ img {
 /* start; Acropolis style */
 .golden-horizon-properties {
   width: 100%;
+  background-color: white;
+  margin: 10px 0;
 }
 .acropolis-title {
   max-width: 100%;
@@ -126,3 +129,22 @@ iframe {
   height: 200px;
 }
 /* end: Video Style */
+
+
+/* start: Style for the rigth column */
+.tabcontent-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.tabcontent-info {
+  display: flex;
+}
+.tabcontent-icon {
+  display: flex;
+}
+.tabcontentRight {
+  display: flex;
+  padding-left: 50px;
+}
+/* end: Style for the right column */
