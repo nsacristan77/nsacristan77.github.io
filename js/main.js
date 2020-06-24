@@ -2,6 +2,13 @@ function myFunction(x) {
   x.classList.toggle("change");
 }
 
+
+
+
+
+
+
+
 var slideIndex = 1;
 showSlides(slideIndex);
 

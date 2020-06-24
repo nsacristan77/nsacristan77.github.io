@@ -10,6 +10,7 @@ body {
 }
 input:focus {
   outline: none;
+  background-color: lightgrey;
 }
 
 button, span, a {
@@ -165,29 +166,32 @@ header {
   width: 30%;
   padding: 8px;
   display: flex;
-  background-color: dodgerblue;
 }
 .searchBar button {
   background-color: tomato;
-  height: 35px;
-  width: 20%;
+  border-radius: 0 50px 50px 0;
+  height: 50px;
+  width: 15%;
   cursor: pointer;
   color: white;
+  font-size: 25px;
 }
 
 .searchBar button:hover {
   background-color: yellow;
-  color: black;
+  color: green;
 }
 .searchBar input {
-  width: 80%;
-  height: 35px;
-  padding: 10px;
-  border: none;
+  width: 85%;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid dodgerblue;
+  border-right: none;
   color: black;
+  border-radius: 50px 0 5px 50px;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   #searchContainer {
     height: 235px;
   }
@@ -196,10 +200,10 @@ header {
     padding: 5px;
   }
   .searchBar input {
-    height: 25px;
+    height: 40px;
   }
   .searchBar button {
-    height: 25px;
+    height: 40px;
   }
 }
 /* end: Style for the search container */

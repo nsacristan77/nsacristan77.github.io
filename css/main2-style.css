@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* start: Global style */
+body {
+  font-family: sans-serif;
+}
+input:focus {
+  outline: none;
+  background-color: lightgrey;
+}
+
+button, span, a {
+  outline: none;
+  border: none;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {margin: 0 -5px;}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+  *html .clearfix {height: 1%;}
+  .clearfix {display: block;}
+  /* End hide from IE-mac*/
+  /* @end */
+
+/* end: Global style */
+
+
+/* start; Acropolis style */
+.golden-horizon-properties {
+  width: 100%;
+}
+.acropolis-title {
+  max-width: 100%;
+  padding: 5px 20px;
+}
+.acropolis-title h5 {
+  font-size: 25px;
+}
+.acropolis-details {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.left-column {
+  flex: 50%;
+  padding: 15px;
+}
+.right-column {
+  flex: 50%;
+  padding: 15px;
+}
+.acropolis-photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  justify-content: center;
+  align-content: center;
+  grid-gap: 10px;
+}
+.acropolis-photo-gallery img {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+
+
+/* end: Acropolis style */
