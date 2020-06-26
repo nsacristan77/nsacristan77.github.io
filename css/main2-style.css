@@ -147,4 +147,40 @@ iframe {
   display: flex;
   padding-left: 50px;
 }
+
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ccc;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
 /* end: Style for the right column */
+
+@media screen and (max-width: 600px) {
+  .thumbnails a {
+    padding-right: 5px;
+  }
+  .thumbnails {
+    margin-right: 0px;
+    width: 100%;
+  }
+}
