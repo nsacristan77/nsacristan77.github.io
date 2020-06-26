@@ -8,6 +8,7 @@
 body {
   font-family: sans-serif;
 }
+
 input:focus {
   outline: none;
   background-color: lightgrey;
@@ -65,11 +66,13 @@ header {
   width: 100%;
   background-color: dodgerblue;
 }
+
 .navbar {
   float: right;
   background-color: dodgerblue;
   padding: 23px 0 22px 60px;
 }
+
 .navbar a {
   text-decoration: none;
   font-size: 17px;

@@ -97,9 +97,9 @@
         <!-- Rigth column -->
         <div class="right-column">
           <div class="tab">
-            <button class="tablinks" onclick="openDetails(event, 'Overview')">Overview</button>
-            <button class="tablinks" onclick="openDetails(event, 'Amenities')">Amenities</button>
-            <button class="tablinks" onclick="openDetails(event, 'Location')">Location</button>
+            <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
+            <button class="tablinks" onclick="openCity(event, 'Amenities')">Amenities</button>
+            <button class="tablinks" onclick="openCity(event, 'Location')">Location</button>
           </div>
 
           <div id="Overview" class="tabcontent">
@@ -109,8 +109,8 @@
                 <div class="tabcontent-info">
                   <div>
                     <p>Garage</p>
-                    <p>Lotr area(m<sup>2</sup>):</p>
-                    <p>Floor area(m<sup>2</sup>):</p>
+                    <p>Lotr area<span>(m<sup>2</sup>)</span>:</p>
+                    <p>Floor area<span>(m<sup>2</sup>)</span>:</p>
                   </div>
                   <div>
                     <p>1</p>
@@ -149,6 +149,60 @@
 
           </div>
 
+          <div id="Amenities" class="tabcontent">
+            <h3>Details</h3>
+            <div class="tabcontent-container">
+              <div class="tabcontentLeft">
+                <div class="tabcontent-info">
+                  <div>
+                    <p>Garage</p>
+                    <p>Lotr area<span>(m<sup>2</sup>)</span>:</p>
+                    <p>Floor area<span>(m<sup>2</sup>)</span>:</p>
+                  </div>
+                  <div>
+                    <p>1</p>
+                    <p>125</p>
+                    <p>110</p>
+                  </div>
+                </div>
+
+                <div class="tabcontent-icon">
+                  <div >
+                    <p><i class="fa fa-bed" aria-hidden="true"></i> Bedrooms:</p>
+                    <p><i class="fa fa-shower" aria-hidden="true"></i> Toilet & Bath:</p>
+                  </div>
+                  <div>
+                    <p>4</p>
+                    <p>2</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="tabcontentRight">
+                <div>
+                  <p>Developer</p>
+                  <p>Subdivision</p>
+                  <p>Price starts</p>
+                </div>
+
+                <div>
+                  <p>HGII</p>
+                  <p>Golden Horizon</p>
+                  <p>1,200,000.00</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="Location" class="tabcontent">
+            <h3>Hello</h3>
+          </div>
+
+          <div class="discription">
+            <h3>DISCRIPTION</h3>
+          </div>
         </div>
       </div>
     </div>
@@ -171,7 +225,7 @@
         <h4>Follow us:</h4>
         <span><a href="https://www.facebook.com/Marajcrealty1"><img src="images/facebook.png"></a></span>
         <span><a href="https://www.instagram.com/marajcrealty"><img src="images/instagram.png"></a></span>
-        <span><a href=""><img src="images/youtube.png"></a></span>
+        <span><a href="https://www.youtube.com/channel/UCoeL4IBTmF7fl0-5S1oMnmA"><img src="images/youtube.png"></a></span>
         <span><a href="https://www.lamudi.com.ph/marites-alvarez-tesalvarez8gmailcom/"><img src="images/lamudi.png"></a></span>
         <span><a href="https://www.carousell.ph/marajcrealtybulacan"><img src="images/carousell.png"></a></span>
       </div>

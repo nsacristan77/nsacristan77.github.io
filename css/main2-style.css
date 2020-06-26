@@ -133,15 +133,37 @@ iframe {
 
 /* start: Style for the rigth column */
 .tabcontent-container {
+  width: 100%;
   display: flex;
   flex-direction: row;
 }
-
+.tabcontent {
+  width: 100%;
+}
+.tabcontent h3 {
+  padding: 0 0 10px 0;
+}
 .tabcontent-info {
   display: flex;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tabcontent-info span {
+  font-size: 10px;
+}
+
+.tabcontent-info > div {
+  padding-right: 8px;
 }
 .tabcontent-icon {
   display: flex;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.tabcontent-icon > div {
+  padding-right: 8px;
 }
 .tabcontentRight {
   display: flex;
@@ -173,10 +195,19 @@ iframe {
   background-color: #ccc;
 }
 
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
 /* end: Style for the right column */
 
 @media screen and (max-width: 600px) {
   .thumbnails a {
+    float: left;
+    width: 33%;
     padding-right: 5px;
   }
   .thumbnails {
