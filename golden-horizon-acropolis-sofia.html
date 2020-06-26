@@ -97,9 +97,9 @@
         <!-- Rigth column -->
         <div class="right-column">
           <div class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Overview')" id="defaultOpen">Overview</button>
-            <button class="tablinks" onclick="openCity(event, 'Amenities')">Amenities</button>
-            <button class="tablinks" onclick="openCity(event, 'Location')">Location</button>
+            <button class="tablinks" onclick="openTab(event, 'Overview')" id="defaultOpen">Overview</button>
+            <button class="tablinks" onclick="openTab(event, 'Amenities')">Amenities</button>
+            <button class="tablinks" onclick="openTab(event, 'Location')">Location</button>
           </div>
 
           <div id="Overview" class="tabcontent">
@@ -150,7 +150,7 @@
           </div>
 
           <div id="Amenities" class="tabcontent">
-            <h3>Details</h3>
+            <h3>Amenities</h3>
             <div class="tabcontent-container">
               <div class="tabcontentLeft">
                 <div class="tabcontent-info">
@@ -197,11 +197,16 @@
           </div>
 
           <div id="Location" class="tabcontent">
-            <h3>Hello</h3>
+            <h3>Location</h3>
+            <div class="tabcontent-container">
+
+                <div id="map"></div>
+
+            </div>
           </div>
 
           <div class="discription">
-            <h3>DISCRIPTION</h3>
+
           </div>
         </div>
       </div>
@@ -236,5 +241,19 @@
     </section>
     <script src="js/main.js"></script>
     <script src="js/myScript.js"></script>
+    <script>
+      function initMap() {
+        var location = {lat: 14.280600, lng: 120.866930};
+        var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: location
+        });
+        var marker = new google.maps.Marker({
+          position: location,
+          map: map
+        });
+      }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2f-_1NmOuhivR6IZaqeE_Z4iXoFGqSYY&callback=initMap"></script>
   </body>
 </html>

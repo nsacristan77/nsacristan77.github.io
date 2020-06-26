@@ -137,9 +137,7 @@ iframe {
   display: flex;
   flex-direction: row;
 }
-.tabcontent {
-  width: 100%;
-}
+
 .tabcontent h3 {
   padding: 0 0 10px 0;
 }
@@ -196,12 +194,16 @@ iframe {
 }
 
 .tabcontent {
+  max-width: 100%;
   display: none;
   padding: 6px 12px;
   border: 1px solid #ccc;
   border-top: none;
 }
 
+#Location {
+  width: 100%;
+}
 /* end: Style for the right column */
 
 @media screen and (max-width: 600px) {
@@ -212,6 +214,22 @@ iframe {
   }
   .thumbnails {
     margin-right: 0px;
+    width: 100%;
+  }
+  .golden-horizon-properties {
+    width: 100%;
+  }
+}
+
+
+#map {
+  height: 120px;
+  width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+  #map {
+    height: 200px;
     width: 100%;
   }
 }
