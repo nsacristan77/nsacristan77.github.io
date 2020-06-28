@@ -161,6 +161,7 @@ header {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -173,7 +174,7 @@ header {
 .searchBar button {
   background-color: tomato;
   border-radius: 0 50px 50px 0;
-  height: 50px;
+  height: 40px;
   width: 15%;
   cursor: pointer;
   color: white;
@@ -186,12 +187,21 @@ header {
 }
 .searchBar input {
   width: 85%;
-  height: 50px;
+  height: 40px;
   padding: 15px;
   border: 1px solid dodgerblue;
   border-right: none;
   color: black;
   border-radius: 50px 0 5px 50px;
+}
+
+.find-the-best {
+  color: black;
+  font-size: 22px;
+}
+
+.dreamHouse {
+  color: gold;
 }
 
 @media screen and (max-width: 600px) {

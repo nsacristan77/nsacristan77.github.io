@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* start: Global style */
+body {
+  font-family: sans-serif;
+}
+input:focus {
+  outline: none;
+}
+
+button, span, a {
+  outline: none;
+  border: none;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row {margin: 0 5px;}
+
+[class*="col-"] {
+  float: left;
+  padding: 5px;
+}
+
+.container {
+    max-width: 1140px;
+    margin: auto;
+    padding: 0 20px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix {display: inline-block;}
+/* Hides from IE-mac \*/
+  *html .clearfix {height: 1%;}
+  .clearfix {display: block;}
+  /* End hide from IE-mac*/
+  /* @end */
+
+/* end: Global style */
+
+/* start: Navigation bar style */
+header {
+  margin: 0;
+  width: 100%;
+  background-color: dodgerblue;
+}
+.navbar {
+  float: right;
+  background-color: dodgerblue;
+  padding: 23px 0 22px 60px;
+}
+.navbar a {
+  text-decoration: none;
+  font-size: 17px;
+  padding: 24px 16px;
+  color: white;
+}
+
+.navbar a:hover {
+  background-color: white;
+  color: black;
+}
+.brand-logo {
+  margin-left: 10px;
+  float: left;
+  width: 65px;
+  height: 65px;
+}
+.brand-name {
+  float: left;
+  font-size: 24px;
+  padding: 18px 16px;
+  color: white;
+}
+/* start: Menu icon */
+.menuIcon {
+  display: none;
+  cursor: pointer;
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-50deg) translate(-8px, 5px);
+  transform: rotate(-50deg) translate(-8px, 5px);
+}
+
+.change .bar2 {opacity: 0;}
+
+.change .bar3 {
+  -webkit-transform: rotate(50deg) translate(-5px, -5px);
+  transform: rotate(50deg) translate(-5px, -5px);
+}
+/* end: Menu icon */
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+    width: 100%;
+    padding: 0;
+  }
+  .navbar a {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .navbar a {
+    border-bottom: 1px solid white;
+  }
+  .navbar a:last-child {
+    border-bottom: none;
+  }
+  .menuIcon {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 15px;
+  }
+
+}
+/* end: Navigation bar style */
+
+
+
+
+/* start: Style for the search container */
+#searchContainer {
+  background: url(../images/chicago.jpg) center center no-repeat;
+  background-size: 100% 100%;
+  height: 500px;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBar {
+  width: 30%;
+  padding: 8px;
+  display: flex;
+}
+.searchBar button {
+  background-color: tomato;
+  border-radius: 0 50px 50px 0;
+  height: 50px;
+  width: 15%;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+}
+
+.searchBar button:hover {
+  background-color: yellow;
+  color: green;
+}
+.searchBar input {
+  width: 85%;
+  height: 50px;
+  padding: 15px;
+  border: 1px solid dodgerblue;
+  border-right: none;
+  color: black;
+  border-radius: 50px 0 5px 50px;
+}
+
+@media screen and (max-width: 600px) {
+  #searchContainer {
+    height: 235px;
+  }
+  .searchBar {
+    width: 80%;
+    padding: 5px;
+  }
+  .searchBar input {
+    height: 40px;
+  }
+  .searchBar button {
+    height: 40px;
+  }
+}
+/* end: Style for the search container */
+
+
+
+
+/* start: Footer style */
+#footer {
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 0.875em;
+  justify-content: space-between;
+  padding: 15px;
+  color: white;
+}
+
+.footer-about-us {
+  flex: 33.33%;
+  text-align: justify;
+  padding: 10px 20px;
+  line-height: 20px;
+}
+
+.footer-about-us h4 {
+  margin-bottom: 5px;
+}
+
+.footer-menu {
+  flex: 33.33%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 25px;
+  padding: 10px 0;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.footer-icon {
+  flex:33.33%;
+  padding: 10px;
+}
+
+.image-resize {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-icon h4 {
+  margin-bottom: 8px;
+}
+.footer-icon span img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+  }
+  .footer-about-us {
+    flex: 100%;
+    max-width: 100%;
+    border-bottom: 1px dotted white;
+    margin-bottom: 5px;
+    padding: 5px 0px;
+  }
+  .footer-menu {
+    flex: 100%;
+    max-width: 100%;
+    border-bottom: 1px dotted white;
+  }
+  .footer-icon {
+    flex: 100%;
+  }
+  #footer2 {
+    font-size: 13px;
+  }
+}
+/* end: Footer style */
+
+/* start: Footer2 style */
+#footer2 {
+  background-color: gray;
+  border-top: 1px dotted white;
+  max-width: 100%;
+  font-size: 0.875em;
+  text-align: center;
+  padding: 10px 0;
+  color: white;
+}
+/* end: Footer2 style */
