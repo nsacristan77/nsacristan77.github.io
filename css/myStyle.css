@@ -147,6 +147,11 @@ header {
 /* end: Navigation bar style */
 
 
+#marajc-managers {
+  height: 500px;
+  max-width: 100%;
+}
+
 /* start: About section style */
 #about-hero-container {
   width: 100%;
