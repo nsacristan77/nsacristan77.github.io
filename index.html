@@ -16,7 +16,30 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
     </head>
   <body>
+    <!-- Load Facebook SDK for JavaScript -->
+      <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+          FB.init({
+            xfbml            : true,
+            version          : 'v7.0'
+          });
+        };
 
+        (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+
+      <!-- Your Chat Plugin code -->
+      <div class="fb-customerchat"
+        attribution=setup_tool
+        page_id="2865889573428360">
+      </div>
+      
     <header class="clearfix">
       <a href="index.html"><img class="brand-logo" src="images/logo.png" alt=""></a>
       <a href="index.html"><p class="brand-name">Marajc Realty</p></a>
@@ -29,7 +52,16 @@
           <div class="navbar">
             <a href="index.html">Home</a>
             <a href="about_us.html">About Us</a>
-            <a href="property.html">Properties</a>
+            <div class="dropdown">
+              <button class="dropbtn" onclick="myFunction()">Porperty Locations
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content" id="myDropdown">
+                <a href="#">Cavite</a>
+                <a href="#">Laguna</a>
+                <a href="#">Bulacan</a>
+              </div>
+            </div>
             <a href="contactus.html">Contact Us</a>
           </div>
         </nav>
